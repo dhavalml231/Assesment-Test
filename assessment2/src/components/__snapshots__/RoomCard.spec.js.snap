@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Roomcard should render disabled room properly 1`] = `
+<div
+  className="disabled sc-bdVaJa ksjZNB"
+>
+  <div
+    className="title"
+  >
+    <div>
+      <input
+        checked={false}
+        id="3_chkBox"
+        onChange={[Function]}
+        type="checkbox"
+        value={3}
+      />
+    </div>
+    <label
+      htmlFor="3_chkBox"
+    >
+      Room 
+      3
+    </label>
+  </div>
+  <div
+    className="sc-bwzfXH bFPRny"
+  >
+    <p>
+      Adults (18+)
+    </p>
+    <p>
+      Children (0-17)
+    </p>
+    <select
+      disabled={true}
+      name="adult"
+      onChange={[Function]}
+      value={1}
+    >
+      <option
+        value={1}
+      >
+        1
+      </option>
+      <option
+        value={2}
+      >
+        2
+      </option>
+    </select>
+    <select
+      disabled={true}
+      name="children"
+      onChange={[Function]}
+      value={0}
+    >
+      <option
+        value={0}
+      >
+        0
+      </option>
+      <option
+        value={1}
+      >
+        1
+      </option>
+      <option
+        value={2}
+      >
+        2
+      </option>
+    </select>
+  </div>
+</div>
+`;
+
+exports[`Roomcard should render first room properly 1`] = `
+<div
+  className="sc-bdVaJa ksjZNB"
+>
+  <div
+    className="title"
+  >
+    <div />
+    <label
+      htmlFor="1_chkBox"
+    >
+      Room 
+      1
+    </label>
+  </div>
+  <div
+    className="sc-bwzfXH bFPRny"
+  >
+    <p>
+      Adults (18+)
+    </p>
+    <p>
+      Children (0-17)
+    </p>
+    <select
+      disabled={false}
+      name="adult"
+      onChange={[Function]}
+      value={1}
+    >
+      <option
+        value={1}
+      >
+        1
+      </option>
+      <option
+        value={2}
+      >
+        2
+      </option>
+    </select>
+    <select
+      disabled={false}
+      name="children"
+      onChange={[Function]}
+      value={0}
+    >
+      <option
+        value={0}
+      >
+        0
+      </option>
+      <option
+        value={1}
+      >
+        1
+      </option>
+      <option
+        value={2}
+      >
+        2
+      </option>
+    </select>
+  </div>
+</div>
+`;
+
+exports[`Roomcard should render non-first enabled room properly 1`] = `
+<div
+  className="sc-bdVaJa ksjZNB"
+>
+  <div
+    className="title"
+  >
+    <div>
+      <input
+        checked={true}
+        id="2_chkBox"
+        onChange={[Function]}
+        type="checkbox"
+        value={2}
+      />
+    </div>
+    <label
+      htmlFor="2_chkBox"
+    >
+      Room 
+      2
+    </label>
+  </div>
+  <div
+    className="sc-bwzfXH bFPRny"
+  >
+    <p>
+      Adults (18+)
+    </p>
+    <p>
+      Children (0-17)
+    </p>
+    <select
+      disabled={false}
+      name="adult"
+      onChange={[Function]}
+      value={1}
+    >
+      <option
+        value={1}
+      >
+        1
+      </option>
+      <option
+        value={2}
+      >
+        2
+      </option>
+    </select>
+    <select
+      disabled={false}
+      name="children"
+      onChange={[Function]}
+      value={0}
+    >
+      <option
+        value={0}
+      >
+        0
+      </option>
+      <option
+        value={1}
+      >
+        1
+      </option>
+      <option
+        value={2}
+      >
+        2
+      </option>
+    </select>
+  </div>
+</div>
+`;
