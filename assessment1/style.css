@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Arial", "sans-serif";
+    font-size:14px;
+}
+@media (min-width: 800px){
+    .appContainer{
+        width:800px;
+        margin:0 auto;
+    } 
+}
+.titleBar{
+    background: #242424;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    height: 53px;
+    overflow: hidden;
+}
+.titleBar button{
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    padding: 10px;
+    border-radius: 1px;
+    color: #FFFFFF;
+    background-color: #242424;
+    background-image: linear-gradient(to bottom, #7d7e7d, #444444);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+.titleBar h2{
+    color:#eee;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height:32px;
+}
+.container{
+    min-height: calc(100vh - 53px);
+    position: relative;
+    padding: 20px;
+}
+.container::before{
+    content: "";
+    background: url("background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+}
+.hotelImg{
+    overflow: hidden;
+    border:4px solid #fff;
+    height: 200px;
+}
+@media (min-width: 450px){
+    .hotelImg{
+        height: 350px;
+    } 
+}
+@media (min-width: 750px){
+    .hotelImg{
+        height: 450px;
+    } 
+}
+.hotelImg img{
+    max-height: 100%;
+}
+.hotelDetails{
+    color:white;
+    margin-top:35px;
+}
+.hotelDetails h3, .hotelDetails h2{
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 30px;
+}
+.hotelDetails h2{
+    font-weight: 700;
+    text-decoration: underline;
+}
+.detailsContainer{
+    display: flex;
+    flex-direction: column;
+}
+.controls{
+    margin-top: 30px;
+}
+.controlButton{
+    padding: 1.2em 1.7em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #81d4fa;
+    box-shadow: inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17), 
+    inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15), 
+    inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+    width: 100%;
+    position: relative;
+    border: none;
+    border-bottom: 3px solid #81d4fa;
+    outline: none;
+    display: flex;
+    color: #343434;
+}
+.controlButton p{
+    flex:1;
+    text-align: left;
+}
+.controlButton:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.controlButton:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+@media (min-width: 450px){
+    .detailsContainer{
+        flex-direction: row;
+    }
+    .hotelDetails{
+        margin-right: 4em;
+    }
+    .controls{
+        flex:1;
+    }
+}
